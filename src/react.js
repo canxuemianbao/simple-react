@@ -1,4 +1,4 @@
-import { renderComponent } from './reactDom';
+import { renderComponent } from './diff.js';
 
 function createElement( tag, attrs, ...children ) {
   return {

@@ -1,5 +1,5 @@
-import { React, Component } from './react';
-import { ReactDOM } from './reactDom';
+import { React, Component } from './react.js';
+import { ReactDOM } from './reactDom.js';
 
 class Welcome extends Component {
     render () {
@@ -32,12 +32,14 @@ class Counter extends Component {
             <div onClick={ () => this.onClick() }>
                 <h1>number: {this.state.num}</h1>
                 <button>add</button>
+                <p>sdfasdf</p>
+                <Welcome name={'asdf'}/>
             </div>
         );
     }
 }
 
 ReactDOM.render(
-    <Counter />,
+    <Counter/>,
     document.getElementById( 'root' )
 );
