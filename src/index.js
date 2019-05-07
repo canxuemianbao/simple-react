@@ -24,7 +24,9 @@ class Counter extends Component {
     }
 
     onClick() {
-        this.setState( { num: this.state.num + 1 } );
+        for (let i = 0; i < 100; i++) {
+            this.setState( ({num}) => ({ num: num + 1 }) );
+        }
     }
 
     render() {
@@ -38,7 +40,6 @@ class Counter extends Component {
         );
     }
 }
-
 ReactDOM.render(
     <Counter/>,
     document.getElementById( 'root' )
