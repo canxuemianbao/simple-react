@@ -38,7 +38,7 @@ class Counter extends Component {
         );
     }
 }
-
+console.log(<Counter/>);
 ReactDOM.render(
     <Counter/>,
     document.getElementById( 'root' )
